@@ -1,0 +1,18 @@
+﻿<Window x:Class="LineAndDotGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LineAndDotGame"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1080" Width="1200" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Canvas>
+        <TextBlock x:Name="score" FontSize="30">0</TextBlock>
+        <TextBlock x:Name="peak_score" Canvas.Top="50" FontSize="30">Peak: </TextBlock>
+        <Button x:Name="button" Canvas.Top="100" PreviewMouseDown="button_PreviewMouseDown" Width="150" Height="50">Show possible moves</Button>
+        <Button x:Name="btn_ai" Canvas.Top="200" PreviewMouseDown="btn_ai_PreviewMouseDown" Width="150" Height="50">Let AI play</Button>
+        <Canvas x:Name="canvas" Canvas.Left="180" Canvas.Top="20" Width="1000" Height="1000" Background="LightGray" PreviewMouseDown="canvas_PreviewMouseDown" PreviewMouseMove="canvas_PreviewMouseMove" PreviewMouseUp="canvas_PreviewMouseUp">
+
+        </Canvas>
+    </Canvas>
+</Window>
